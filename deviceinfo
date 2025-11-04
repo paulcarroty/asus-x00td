@@ -20,4 +20,5 @@ deviceinfo_flash_offset_second="0x00f00000"
 deviceinfo_flash_offset_tags="0x00000100"
 deviceinfo_flash_pagesize="4096"
 deviceinfo_halium_version="9"
+deviceinfo_system_partition_size=3300M
 deviceinfo_ubuntu_touch_release="24.04-1.x"
