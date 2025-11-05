@@ -8,3 +8,11 @@ build:
 include:
   - https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools/-/raw/main/gsi-port-ci.yml
 
+devel-flashable:
+  tags: [ubports]
+  after_script:
+    - apt install zstd
+    - zstd -15 -T0 out/ubuntu.img
+  artifacts:
+    paths:
+      - out/ubuntu.img.zst
